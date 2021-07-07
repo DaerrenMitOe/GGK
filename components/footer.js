@@ -51,14 +51,14 @@ footerTemplate.innerHTML = `
 `;
 
 class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
-    shadowRoot.appendChild(footerTemplate.content);
-  }
+    connectedCallback() {
+        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        shadowRoot.appendChild(footerTemplate.content);
+    }
 }
 
 customElements.define('footer-component', Footer);

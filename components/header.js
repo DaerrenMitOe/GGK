@@ -38,14 +38,14 @@ headerTemplate.innerHTML = `
 `;
 
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
-    shadowRoot.appendChild(headerTemplate.content);
-  }
+    connectedCallback() {
+        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        shadowRoot.appendChild(headerTemplate.content);
+    }
 }
 
 customElements.define('header-component', Header);
